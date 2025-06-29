@@ -1,6 +1,7 @@
 body {
     background-color: black;
     font-family: "Shadows Into Light", sans-serif;
+
 }
 
 #mainNavbar {
@@ -10,7 +11,6 @@ body {
     justify-content: space-between;
     text-align: center;
     padding: 20px;
-    height: 45px;
     margin: 0;
 }
 
@@ -26,6 +26,9 @@ body {
 
 .cta-wrapper {
     justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 #headingGroup h1 {
@@ -33,12 +36,17 @@ body {
     font-size: 3.5rem;
 }
 
+
 @media(max-width:1200px) {
-    #headingGroup h1 {
+    .headingGroup {
         color: white;
         font-size: 2.5rem;
+
     }
 }
+
+
+
 
 .img-fluid {
     width: 150;
@@ -169,6 +177,7 @@ button.cta-button {
     animation-play-state: paused;
 }
 
+
 #button-link {
     color: rgb(255, 255, 255);
 }
@@ -207,6 +216,7 @@ button.cta-button {
 ul {
     list-style-type: none;
     margin: 0;
+
 }
 
 
@@ -233,9 +243,10 @@ li {
     margin: 30px;
     ;
     border-radius: 13px;
+
 }
 
-.card-group>.card {
+.card-group.card {
     border: radius 13px !important;
     ;
 }
@@ -251,6 +262,7 @@ section {
     padding-right: 50px;
     padding-bottom: 5px;
     padding-left: 50px;
+
 }
 
 h3 {
@@ -259,4 +271,41 @@ h3 {
     text-decoration: underline;
     padding-top: 130px;
     text-underline-position: under;
+}
+
+.form-control {
+    background-color: transparent;
+    box-shadow: 0px 2px 12px 0 rgba(255, 0, 255, 0.511), 0px 0px 7px 0 rgba(255, 0, 255, 0.511);
+    border-style: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+
+}
+
+.btn {
+    background-color: rgb(255, 0, 255);
+    color: rgb(255, 255, 255);
+}
+
+
+
+.form-control:focus {
+    border-color: magenta;
+    box-shadow: 0px 5px 34px 0 rgba(255, 0, 255, 0.511), 0px 0px 7px 0 rgba(255, 0, 255, 0.511);
+    color: white;
+}
+
+@media(max-width:1200px) {
+    form {
+        color: white;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 0.65;
+    /* Firefox */
 }
