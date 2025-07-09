@@ -43,30 +43,36 @@
     </nav>
 
 
-    <div class="sections-wrapper">
+    <div class="sections-wrapper container py-5">
         <!-- image and cta(call to action) -->
-        <section class="group">
-            <div class=" row align-items-center ">
-                <div class="cta-wrapper col-lg-6 col-sm-1  ">
-                    <div id="headingGroup" class="text-white text center  col-lg-6 col-sm-1 ">
-                        <h1 id="h2" class="text-center ">SELF TAUGHT WEB DEVELOPER</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labor</p>
+        <section class="d-sm-flex align-items-center py-5">
+            <div class="cta-wrapper row align-items-center flex-column-reverse flex-lg-row ">
+                <div id="headingGroup" class="text-white text center align-items-center">
+                    <h1 id="h1" class="text-center  col-lg-7  text-lg-start mb-4 mb-lg-0 ">SELF TAUGHT WEB DEVELOPER
+                    </h1>
+                    <p class="paragraph col-lg-9">Bringing creative ideas to life through efficient code and intuitive
+                        user experiences.
+                        Passionate about continuous learning and problem-solving.</p>
 
-                    </div>
-                    <button class="cta-button"> ABOUT ME
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
                 </div>
-                <div class="col-lg-6 col-sm-1 px-0 d-flex justify-content-center" id="first">
-                    <img id="first-img" width="350px" class="img-fluid" src="C:\Users\singu\Desktop\anthi fvto.jpg "
-                        alt="">
+                <div class="buttonme ">
+                    <a href="#aboutme" role="button">
+                        <button class="cta-button"> ABOUT ME
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </a>
                 </div>
             </div>
+            <div class=" photome col-lg-5 text-center px-0 " id="first">
+                <img id="first-img" class="img-fluid" width="350" src="C:\Users\singu\Desktop\anthi fvto.jpg "
+                    alt="Anthi Athinaiou">
+            </div>
         </section>
+
         <!-- skills -->
         <div class="align-items-center ">
             <h3>DEVELOPMENT SKILLS </h3>
@@ -97,57 +103,92 @@
             </div>
         </section>
         <!-- extra skills -->
-        <section style="display: flex">
-            <div class="row" id="CARDS">
-                <div class="card col-sm">
+        <section>
+            <div class="d-lg-flex justify-content-center" id="cards">
+                <div class="card">
                     <h5 class="card-title">ORGANIZE</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-                        necessitatibus
-                        dicta consequuntur,
-                        voluptatum voluptas dolores harum autem vel blanditiis sapiente. Vitae placeat numquam saepe,
-                        magnam
-                        error reiciendis tenetur alias est.</p>
+                    <p class="card-text">Highly organized and detail-oriented, I ensure projects are
+                        well-structured, deadlines are met, and development processes are efficient. This translates
+                        to cleaner codebases and smoother project workflows.</p>
                 </div>
-                <div class="card col-sm">
+                <div class="card">
                     <h5 class="card-title"> MARKETING</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-                        necessitatibus
-                        dicta consequuntur,
-                        voluptatum voluptas dolores harum autem vel blanditiis sapiente. Vitae placeat numquam saepe,
-                        magnam
-                        error reiciendis tenetur alias est.</p>
+                    <p class="card-text">Understanding market trends and user behavior based on my experience helps
+                        me create websites that are not only functional but also strategically aligned with business
+                        goals and user needs.</p>
                 </div>
-                <div class="card col-sm">
+                <div class="card">
                     <h5 class="card-title">SALES</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-                        necessitatibus dicta
-                        consequuntur,
-                        voluptatum voluptas dolores harum autem vel blanditiis sapiente. Vitae placeat numquam saepe,
-                        magnam
-                        error reiciendis tenetur alias est.</p>
+                    <p class="card-text"> I have acquired the ability to
+                        communicate concepts clearly and effectively, promoting better collaboration and
+                        understanding based on my 12 years of experience in sales. </p>
                 </div>
             </div>
 
         </section>
 
+
+        <section style="display: flex;" class="infoaboutme py-5  bg-dark   container-fluid " id="aboutme">
+            <div class="container-fluid ">
+                <h2 class="text-center mb-5 display-5 fw-bold">ABOUT ME </h2>
+                <div class="row justify-content-center">
+                    <p class="info">Hello! I am Anthi Athinaiou, a passionate self-taught web developer with a keen eye
+                        for detail and a love for creating beautiful, functional experiences on the web. My journey into
+                        programming began with a curiosity to understand how websites work.
+                        I have graduated from culinary school as well as from business administration school.
+                        I have worked in both industries, which have strengthened the communication, organization, and
+                        perseverance that I possess. I bring a unique blend of strategic thinking and practical
+                        execution to my development work. I thrive on challenges and ascertain constantly expanding my
+                        skillset to stay at the forefront of web technologies. Outside of coding, I enjoy acting in
+                        theater, going on trips with my family, and reading books - a number of things that help me
+                        maintain a fresh perspective and fuel my creativity.</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
         <section id="contactme" class=" d-flex justify-content-center  text-white ">
             <form class="col-lg-4 p-3 ">
                 <div class="form-group ">
-                    <label for="exampleInputEmail1">Email address</label>
+                    <label for="exampleInputEmail1">NAME</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted py-3">l will never share your email with anyone
-                        else.</small>
+                        placeholder="Enter Your Name">
+
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputMessage" id="message">SEND ME A MESSAGE</label>
-                    <textarea class="form-control primary-black" id="exampleInputMessageme" placeholder="Message ">
+                    <label for="exampleFormControlTextarea1" id="message">SEND ME A MESSAGE</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Message"></textarea>
                 </div>
                 <button type="submit" class="btn mt-3">Submit</button>
             </form>
         </section>
 
     </div>
+    <div class="text-center mt-5">
+        <p>You can also find me on :</p>
+        <a href="https://github.com/yourusername" target="_blank" class="text-white  fs-3 ">
+            <i class="bi bi-github">
+
+            </i>
+        </a>
+    </div>
+    <section>
+        <footer class="bg-secondary  text-center py-3">
+            <div class="container">
+                <p class=" rights mb-0">©
+                    <span id="currentYear">2025</span>
+                    "Anthi Athinaiou. All rights reserved."
+
+                </p>
+            </div>
+
+
+        </footer>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

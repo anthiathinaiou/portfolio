@@ -12,6 +12,7 @@ body {
     text-align: center;
     padding: 20px;
     margin: 0;
+     box-shadow: 0px 1px 20px rgba(255, 0, 255, 0.596), 0px 0px 2px rgba(255, 0, 255, 0.655);
 }
 
 #mainNavbar .nav-link:hover {
@@ -24,16 +25,32 @@ body {
     justify-content: space-between;
 }
 
-.cta-wrapper {
-    justify-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 
-}
+@media(max-width:1200px) {
+    .cta-wrapper {
+   
+        font-size: 1.5rem;
+justify-content: space-between;
+
+    }
+} 
+
+.img-fluid {
+    @media(min-width:576x) {
+        width: 100%;
+    }
+} 
+
 
 #headingGroup h1 {
     color: white;
     font-size: 3.5rem;
+    letter-spacing: 3px;
+   
+}
+
+#headingGroup{
+    justify-items: anchor-center;
 }
 
 
@@ -43,16 +60,25 @@ body {
         font-size: 2.5rem;
 
     }
+} 
+
+.buttonme {
+  display: block; 
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-
+.paragraph{
+    text-align-last:  left;
+    letter-spacing: 3px;
+}
 
 .img-fluid {
     width: 150;
     height: 150;
     box-shadow: 0px 5px 34px 0 rgb(255, 255, 255), 0px 0px 7px 0 rgb(255, 255, 255);
-}
+} 
 
 button.cta-button {
     justify-items: center;
@@ -228,6 +254,10 @@ li {
     text-decoration: none;
 }
 
+#cards {
+    justify-self: center;
+}
+
 .card {
     font-size: 1.rem;
     font-weight: 100;
@@ -241,9 +271,9 @@ li {
     box-shadow: 0px 5px 34px 0 rgba(255, 0, 255, 0.511), 0px 0px 7px 0 rgba(255, 0, 255, 0.511);
     padding: 30px;
     margin: 30px;
-    ;
+    max-width: 250px;
     border-radius: 13px;
-
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .card-group.card {
@@ -307,5 +337,47 @@ h3 {
 .form-control::placeholder {
     color: white;
     opacity: 0.65;
-    /* Firefox */
+
+}
+
+.text-center {
+    color: rgb(255, 255, 255)
+}
+
+.text-white.rights {
+
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity))
+}
+
+footer {
+    font-family: sans-serif;
+
+}
+
+.text-white {
+
+    font-size: calc(1rem + .6vw) !important;
+
+}
+
+.info {
+    color: rgb(255, 255, 255);
+}
+
+.infoaboutme {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+@media(max-width:1200x) {
+    .infoaboutme {
+        color: white;
+        font-size: 1.5rem;
+        width: 100%;
+        align-items: center;
+    }
 }
